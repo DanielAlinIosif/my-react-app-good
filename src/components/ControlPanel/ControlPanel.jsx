@@ -31,7 +31,7 @@ const ControlPanel = (props) => {
         <Button onClick={openModal} />
       </div>
 
-      <Modal isOpen={true} onClose={closeModal}>
+      <Modal isOpen={isOpen} onClose={closeModal}>
         <div className="form-container">
           <h2>Create Task</h2>
           <CreateTaskForm addTask={handleNewTaskAdd} />
