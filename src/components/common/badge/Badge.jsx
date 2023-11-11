@@ -13,7 +13,7 @@ const Badge = (props) => {
       case "Complete":
         return "green";
       default:
-        return;
+        return "grey";
     }
   };
     
