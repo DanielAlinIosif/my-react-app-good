@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import TaskCard from "./components/TaskCard/TaskCard";
 
-function App() {
+//function App(){}
+const App = () => {
+  const data = [
+    {
+      id: "T-1",
+      status: "Todo",
+      description: " Create a Design System for Enum Workspace",
+      dueDate: new Date(2021, 5, 24),
+    },
+    {
+      id: "T-6",
+      status: "complete",
+      description: "Design System for Enum Workspace",
+      dueDate: new Date(2025, 5, 24),
+    },
+  ];
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TaskCard
+        id={data[0].id}
+        status={data[0].status}
+        description={data[0].description}
+        dueDate={data[0].dueDate}
+      />
+      <TaskCard
+        id={data[1].id}
+        status={data[1].status}
+        description={data[1].description}
+        dueDate={data[1].dueDate}
+      />
+    </>
   );
-}
+};
 
 export default App;
