@@ -17,6 +17,7 @@ const Badge = (props) => {
         return "grey";
     }
   };
+  // eslint-disable-next-line no-template-curly-in-string
   return <p className={"status ${stylebadge}()"}>{props.status}</p>;
 };
 
