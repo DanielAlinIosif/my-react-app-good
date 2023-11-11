@@ -1,12 +1,13 @@
 import React from "react";
 import "./TaskCard.css";
+import "../common/badge/Badge";
 
 const TaskCard = (props) => {
   return (
     <div className="task-container">
       <div className="taskHeader">
         <p className="id">{props.id}</p>
-        <p className="status">{props.status}</p>
+        <Badge status={props.status} />
       </div>
       <div className="taskContent">{props.description}</div>
       <div className="taskFooter">
