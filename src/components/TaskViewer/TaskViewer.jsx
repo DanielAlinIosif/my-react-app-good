@@ -9,7 +9,7 @@ const TaskViewer = (props) => {
   return (
     <>
       <div className="viewer-container">
-        <ControlPanel addTask={props.onAddTask} />
+        <ControlPanel onAddTask={props.onAddTask} />
 
         {props.dataFields.length > 0 ? (
           <div className="cards-container">
