@@ -1,13 +1,28 @@
 import React from "react";
 import "./TaskCard.css";
-import "../common/badge/Badge.css";
+import "../common/badge/Badge";
 
 const TaskCard = (props) => {
+  // eslint-disable-next-line no-unused-vars
+  const styleBadge = () => {
+    switch (props.status) {
+      case "Todo":
+        return "grey";
+      case "Pending":
+        return "yellow";
+      case "In progress":
+        return "blue";
+      case "Complete":
+        return "green";
+      default:
+        return "grey";
+    }
+  };
   return (
     <div className="task-container">
       <div className="taskHeader">
         <p className="id">{props.id}</p>
-        <badge status={props.status} />
+        <badge label={props.status} color={styleBadge()} />
       </div>
       <div className="taskContent">{props.description}</div>
       <div className="taskFooter">
