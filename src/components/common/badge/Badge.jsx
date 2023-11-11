@@ -1,7 +1,8 @@
 import React from "react";
-import "./Badge.css";
+import "./badge/Badge.css";
 
 const Badge = (props) => {
+  // eslint-disable-next-line no-unused-vars
   const styleBadge = () => {
     switch (props.status) {
       case "Todo":
@@ -16,8 +17,9 @@ const Badge = (props) => {
         return "grey";
     }
   };
-    
-  return <p className="status">{props.status}</p>;
+
+  // eslint-disable-next-line no-template-curly-in-string
+  return <p className={"status ${stylebadge()}"}>{props.status}</p>;
 };
 
 export default Badge;
