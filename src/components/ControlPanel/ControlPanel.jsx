@@ -5,6 +5,7 @@ import Modal from "../modal/Modal";
 import CreateTaskForm from "../CreateTaskForm/CreateTaskForm";
 
 const ControlPanel = (props) => {
+  // eslint-disable-next-line no-unused-vars
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
