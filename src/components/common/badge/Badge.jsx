@@ -12,8 +12,11 @@ const Badge = (props) => {
         return "blue";
       case "Complete":
         return "green";
+      default:
+        return;
     }
   };
+    
   return <p className="status">{props.status}</p>;
 };
 
