@@ -1,7 +1,6 @@
 import "./App.css";
 import TaskCard from "./components/TaskCard/TaskCard";
 
-//function App(){}
 const App = () => {
   const data = [
     {
