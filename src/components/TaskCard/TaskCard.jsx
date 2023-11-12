@@ -1,6 +1,7 @@
 import React from "react";
 import "./TaskCard.css";
-import "../common/badge/Badge";
+// eslint-disable-next-line no-unused-vars
+import Badge from "../common/badge/Badge";
 
 const TaskCard = (props) => {
   // eslint-disable-next-line no-unused-vars

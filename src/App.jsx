@@ -33,16 +33,21 @@ const App = () => {
   const [taskData, setTaskData] = useState(data);
 
   const onAddTask = (newTask) => {
+    // eslint-disable-next-line no-unused-vars
+    var oVariabila = "ceva";
     console.log("Task adaugat din App.jsx: ", newTask);
     setTaskData((prevState) => [
       ...prevState,
       {
         ...newTask,
         id: `T-${prevState.length + 1}`,
-        dueDate: new Date(newTask.dueDate),
-      },
+        dueDate: new Date(newTask.dueDate)
+      }
     ]);
   };
+
+  // eslint-disable-next-line no-undef
+  console.log("o variabila", oVariabila);
 
   return (
     <div className="page-container">

@@ -75,7 +75,7 @@ const CreateTaskForm = (props) => {
   return (
     <form onSubmit={handleSubmitForm}>
       <div className="form-row">
-        <label for="taskName">Task Name</label>
+        <label htmlfor="taskName">Task Name</label>
         <input
           type="text"
           id="taskName"
@@ -84,7 +84,7 @@ const CreateTaskForm = (props) => {
         />
       </div>
       <div className="form-row">
-        <label for="taskDate">Due Date</label>
+        <label htmlfor="taskDate">Due Date</label>
         <input
           type="date"
           id="taskDate"
@@ -93,7 +93,7 @@ const CreateTaskForm = (props) => {
         />
       </div>
       <div className="form-row">
-        <label for="taskDescription">Task Description</label>
+        <label htmlfor="taskDescription">Task Description</label>
         <textarea
           id="taskDescription"
           rows="4"
