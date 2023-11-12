@@ -17,15 +17,13 @@ const TaskCard = (props) => {
       default:
         return "grey";
     }
+    debugger;
   };
   return (
     <div className="task-container">
       <div className="taskHeader">
         <p className="id">{props.id}</p>
-        <Badge
-          label={props.status}
-          color={styleBadge("grey", "yellow", "blue", "green")}
-        />
+        <Badge label={props.status} color={styleBadge()} />
       </div>
       <div className="taskContent">{props.description}</div>
       <div className="taskFooter">
