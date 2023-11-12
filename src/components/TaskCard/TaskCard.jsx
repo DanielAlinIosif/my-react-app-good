@@ -22,7 +22,10 @@ const TaskCard = (props) => {
     <div className="task-container">
       <div className="taskHeader">
         <p className="id">{props.id}</p>
-        <Badge label={props.status} color={styleBadge} />
+        <Badge
+          label={props.status}
+          color={styleBadge("grey", "yellow", "blue", "green")}
+        />
       </div>
       <div className="taskContent">{props.description}</div>
       <div className="taskFooter">
