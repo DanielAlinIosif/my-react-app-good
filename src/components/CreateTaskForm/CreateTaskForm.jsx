@@ -3,51 +3,20 @@ import "./CreateTaskForm.css";
 import Button from "../common/button/Button";
 
 const CreateTaskForm = (props) => {
-  // const [taskData, setTaskData] = useState({
-  //   taskName: "",
-  //   taskDate: "",
-  //   taskDescription: "",
-  // });
-
-  // console.log(taskData);
-  // const handleTaskName = (event) => {
-  //   setTaskData((prevState) => ({
-  //     ...taskData,
-  //     taskName: event.target.value,
-  //   }));
-  // };
-
-  // const handleTaskDate = (event) => {
-  //   setTaskData((prevState) => ({
-  //     ...taskData,
-  //     taskDate: event.target.value,
-  //   }));
-  // };
-
-  // const handleTaskDescription = (event) => {
-  //   setTaskData((prevState) => ({
-  //     ...taskData,
-  //     taskDescription: event.target.value,
-  //   }));
-  // };
-
   const [taskName, setTaskName] = useState("");
   const [taskDate, setTaskDate] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
 
   const handleTaskName = (event) => {
     setTaskName(event.target.value);
-    // console.log(taskName);
   };
 
   const handleTaskDate = (event) => {
     setTaskDate(event.target.value);
-    // console.log(taskDate);
   };
 
   const handleTaskDescription = (event) => {
     setTaskDescription(event.target.value);
-    // console.log(taskDescription);
   };
 
   const resetState = () => {
@@ -63,7 +32,7 @@ const CreateTaskForm = (props) => {
       name: taskName,
       dueDate: taskDate,
       description: taskDescription,
-      status: "Todo",
+      status: "Todo"
     };
 
     props.addTask(newTask);
