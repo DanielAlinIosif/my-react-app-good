@@ -23,7 +23,7 @@ const App = () => {
     },
     {
       id: "T-4",
-      status: "In progress",
+      status: "Pending",
       description: "Something - Enum Workspace",
       dueDate: new Date(2023, 8, 24)
     }
