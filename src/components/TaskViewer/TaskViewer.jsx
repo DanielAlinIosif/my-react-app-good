@@ -5,7 +5,6 @@ import ControlPanel from "../ControlPanel/ControlPanel";
 import EmptyListMessage from "../empty-list-message/EmptyListMessage";
 
 const TaskViewer = (props) => {
-  // console.log("Task viewer", props);
   return (
     <>
       <div className="viewer-container">

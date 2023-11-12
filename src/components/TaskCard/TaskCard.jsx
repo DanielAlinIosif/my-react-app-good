@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 import React from "react";
 import "./TaskCard.css";
 // eslint-disable-next-line no-unused-vars
