@@ -4,7 +4,6 @@ import "./TaskCard.css";
 import Badge from "../common/badge/Badge";
 
 const TaskCard = (props) => {
-  // eslint-disable-next-line no-unused-vars
   const styleBadge = () => {
     switch (props.status) {
       case "Todo":
@@ -23,7 +22,7 @@ const TaskCard = (props) => {
     <div className="task-container">
       <div className="taskHeader">
         <p className="id">{props.id}</p>
-        <badge label={props.status} color={styleBadge()} />
+        <Badge label={props.status}>color={styleBadge}</Badge>
       </div>
       <div className="taskContent">{props.description}</div>
       <div className="taskFooter">
